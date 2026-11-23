@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -338,4 +339,332 @@
 
     <script src="Script.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Rico John V. Gardose - Web Developer">
+    <meta name="keywords" content="Portfolio, Web Developer, HTML, CSS, JavaScript, Python, Django, PostgreSQL, SQL">
+    <meta name="author" content="Rico John V. Gardose">
+
+    <script>
+        try { if (localStorage.getItem('theme') === 'light') document.documentElement.classList.add('light'); } catch (e) {}
+    </script>
+
+    <title>Rico John V. Gardose - Web Developer</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-x-hidden">
+
+
+    <nav class="fixed w-full top-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-700/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-2xl font-bold accent brand">Rico John</div>
+                <div class="flex items-center gap-6">
+                    <div class="hidden md:flex space-x-8">
+                        <a href="#home" class="nav-link"><i class="fa-solid fa-house fa-fw"></i>Home</a>
+                        <a href="#about" class="nav-link"><i class="fa-solid fa-user fa-fw"></i>About me</a>
+                        <a href="#skills" class="nav-link"><i class="fa-solid fa-laptop-code fa-fw"></i>Skills</a>
+                        <a href="#project" class="nav-link"><i class="fa-solid fa-folder-open fa-fw"></i>Projects</a>
+                        <a href="#contact" class="nav-link"><i class="fa-solid fa-envelope fa-fw"></i>Contact</a>
+                    </div>
+                    <button id="themeBtn" class="social-icon" aria-label="Toggle light / dark mode" title="Light / dark mode"><i class="fa-solid fa-sun"></i></button>
+                    <button id="menuBtn" class="md:hidden text-2xl" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+        <div id="mobileMenu">
+            <a href="#home" class="nav-link"><i class="fa-solid fa-house fa-fw"></i>Home</a>
+            <a href="#about" class="nav-link"><i class="fa-solid fa-user fa-fw"></i>About me</a>
+            <a href="#skills" class="nav-link"><i class="fa-solid fa-laptop-code fa-fw"></i>Skills</a>
+            <a href="#project" class="nav-link"><i class="fa-solid fa-folder-open fa-fw"></i>Projects</a>
+            <a href="#contact" class="nav-link"><i class="fa-solid fa-envelope fa-fw"></i>Contact</a>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex items-center justify-center pt-16 px-4 relative overflow-hidden">
+        <div id="aurora" aria-hidden="true">
+        <span class="orb o1"></span>
+        <span class="orb o2"></span>
+        <span class="orb o3"></span>
+        <div class="grid-bg"></div>
+    </div>
+
+        <div id="stars"></div>
+
+        <div class="text-center fade-in relative z-10">
+            
+            <h1 class="text-4xl md:text-6xl font-bold mb-3">I'm <span class="accent">Rico John V. Gardose</span></h1>
+            <h2 class="intro-title">Web Developer</h2>
+            <p class="intro-text">Building meaningful digital experiences through creative design, clean code, and modern web technologies. Turning ideas into websites that make an impact.</p>
+
+            <div class="flex flex-wrap items-center justify-center gap-3">
+                <a href="https://github.com/RicoJohnViliGardose" target="_blank" rel="noopener" class="social-icon" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ricojohngardose" target="_blank" rel="noopener" class="social-icon" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://mail.google.com/mail/?view=cm&amp;fo=1&amp;to=ricojhongardose@gmail.com" target="_blank" rel="noopener" class="social-icon" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#about" class="btn-primary text-sm ml-2"><i class="fa-solid fa-user mr-1"></i> More about Me</a>
+            </div>
+        </div>
+
+        <a href="#about" class="scroll-arrow" aria-label="Scroll down"><i class="fa-solid fa-chevron-down"></i></a>
+    </section>
+
+    <section id="about" class="py-20 px-4 bg-slate-800">
+        <div class="max-w-4xl mx-auto w-full tab-group">
+
+            <div class="flex flex-wrap justify-center gap-2 mb-10">
+                <button type="button" class="tab-btn active" data-tab="tab-aboutme"><i class="fa-solid fa-user mr-2"></i>About Me</button>
+                <button type="button" class="tab-btn" data-tab="tab-education"><i class="fa-solid fa-graduation-cap mr-2"></i>Education</button>
+            </div>
+
+            <div id="tab-aboutme" class="tab-panel">
+                <div class="grid md:grid-cols-[200px_1fr] gap-8 items-center bg-slate-800/50 backdrop-blur rounded-xl p-8 border border-slate-700/50">
+                    <img src="Picture.png" alt="Rico John V. Gardose profile photo" class="avatar mx-auto md:mx-0 max-w-[200px]">
+                    <div>
+                        <p class="eyebrow mb-2">Who I Am</p>
+                        <p class="text-gray-300 leading-relaxed text-sm md:text-base mb-3">
+                            I'm Rico John V. Gardose, a third-year BSIT student at Filamer Christian
+                            University from Jamindan, Capiz, with a strong interest in web development
+                            and building practical digital solutions.
+                        </p>
+                        <p class="text-gray-300 leading-relaxed text-sm md:text-base mb-3">
+                            I enjoy turning ideas into functional applications, combining thoughtful
+                            interface design with backend development and database management. My goal
+                            is to create websites that are not only visually appealing but also reliable,
+                            responsive, and easy to use.
+                        </p>
+                        <p class="text-gray-300 leading-relaxed text-sm md:text-base">
+                            My technical interests include web development, with a focus on HTML, CSS,
+                            JavaScript, Python, Django, and SQL (PostgreSQL). I enjoy exploring how
+                            technology works, solving problems through code, and developing my skills in
+                            both frontend and backend development. I'm also interested in artificial
+                            intelligence, cybersecurity, and emerging technologies that create new ways
+                            for people to interact with digital applications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab-education" class="tab-panel hidden">
+                <div class="max-w-2xl mx-auto">
+                    <h3 class="text-2xl font-semibold mb-6 text-purple-400"><i class="fa-solid fa-graduation-cap mr-2"></i>Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item current">
+                            <p class="edu-date">2024 — Present <span class="chip">Ongoing</span></p>
+                            <p class="edu-title">Bachelor of Science in Information Technology — 3rd Year</p>
+                            <p class="edu-school accent">Filamer Christian University</p>
+                            <p class="school-addr"><i class="fa-solid fa-location-dot"></i>Roxas City, Capiz</p>
+                        </div>
+                        <div class="timeline-item">
+                            <p class="edu-date">2022 — 2024</p>
+                            <p class="edu-title">Senior High School — General Academic Strand (GAS)<span class="chip chip-honor"><i class="fa-solid fa-award"></i>Graduated with Honors</span></p>
+                            <p class="edu-school accent">Macario Bermejo Delfin National High School</p>
+                            <p class="school-addr"><i class="fa-solid fa-location-dot"></i>Jamindan, Capiz</p>
+                        </div>
+                        <div class="timeline-item">
+                            <p class="edu-date">2018 — 2022</p>
+                            <p class="edu-title">Junior High School<span class="chip chip-honor"><i class="fa-solid fa-award"></i>Graduated with Honors</span></p>
+                            <p class="edu-school accent">Macario Bermejo Delfin National High School</p>
+                            <p class="school-addr"><i class="fa-solid fa-location-dot"></i>Jamindan, Capiz</p>
+                        </div>
+                        <div class="timeline-item">
+                            <p class="edu-date">2012 — 2018</p>
+                            <p class="edu-title">Elementary School</p>
+                            <p class="edu-school accent">Camp Peralta Elementary School</p>
+                            <p class="school-addr"><i class="fa-solid fa-location-dot"></i>Jamindan, Capiz</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 px-4">
+        <div class="max-w-4xl mx-auto w-full tab-group">
+
+            <div class="flex flex-wrap justify-center gap-2 mb-10">
+                <button type="button" class="tab-btn active" data-tab="tab-skills"><i class="fa-solid fa-bolt mr-2"></i>Skills</button>
+                <button type="button" class="tab-btn" data-tab="tab-certs"><i class="fa-solid fa-certificate mr-2"></i>Certificates</button>
+            </div>
+
+            <div id="tab-skills" class="tab-panel">
+                <p class="text-sm text-gray-400 mb-3 text-center"><i class="fa-solid fa-palette mr-2"></i>Frontend &amp; Design</p>
+                <div class="marquee">
+                    <div class="marquee-track">
+                            <div class="skill-tile"><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
+                            <div class="skill-tile"><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
+                            <div class="skill-tile"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+                            <div class="skill-tile"><i class="devicon-tailwindcss-plain colored"></i><span>Tailwind CSS</span></div>
+                            <div class="skill-tile"><i class="devicon-figma-plain colored"></i><span>Figma</span></div>
+                            
+                    </div>
+                </div>
+
+                <p class="text-sm text-gray-400 mt-10 mb-3 text-center"><i class="fa-solid fa-server mr-2"></i>Backend &amp; Tools</p>
+                <div class="marquee reverse">
+                    <div class="marquee-track">
+                            <div class="skill-tile"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                            <div class="skill-tile"><i class="devicon-django-plain colored"></i><span>Django</span></div>
+                            <div class="skill-tile"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+                            <div class="skill-tile"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+                            <div class="skill-tile"><i class="devicon-github-original colored"></i><span>GitHub</span></div>
+                            <div class="skill-tile"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
+                            
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab-certs" class="tab-panel hidden">
+                <div id="certPreview" class="grid grid-cols-2 md:grid-cols-4 gap-4"></div>
+                <div class="text-center mt-8">
+                    <button type="button" id="certViewAll" class="btn-primary text-sm">
+                        <i class="fa-solid fa-images mr-2"></i>View All
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="project" class="py-12 px-4">
+        <div class="max-w-3xl mx-auto w-full">
+            <h2 class="text-3xl font-bold mb-6 text-center text-gray-300"><i class="fa-solid fa-folder-open accent mr-2"></i>School <span class="accent">Projects</span></h2>
+
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="project-card fade-in">
+                    <div class="w-full h-14 rounded-lg mb-2 bg-purple-500/10 border border-slate-700/50 flex items-center justify-center">
+                        <i class="fa-solid fa-check-to-slot text-xl text-purple-300"></i>
+                    </div>
+                    <span class="project-tag">Python</span>
+                    <span class="project-tag">Django</span>
+                    <span class="project-tag">School Project</span>
+                    <h3 class="text-base font-semibold mb-1">Online Voting Website</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-2">An online voting website built with Python, Django, HTML, CSS and JavaScript that stores and manages voting records using SQL.</p>
+                    <a href="https://github.com/RicoJohnViliGardose/schoolSystemVoting" target="_blank" rel="noopener" class="text-purple-400 hover:text-purple-300 text-xs">
+                        <i class="fa-brands fa-github mr-1"></i> GitHub →
+                    </a>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="w-full h-14 rounded-lg mb-2 bg-purple-500/10 border border-slate-700/50 flex items-center justify-center">
+                        <i class="fa-solid fa-id-card text-xl text-purple-300"></i>
+                    </div>
+                    <span class="project-tag">HTML</span>
+                    <span class="project-tag">CSS</span>
+                    <span class="project-tag">JavaScript</span>
+                    <h3 class="text-base font-semibold mb-1">Personal Portfolio Website</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-2">A responsive portfolio website that showcases my skills, projects and background as a web developer.</p>
+                    <a href="https://github.com/RicoJohnViliGardose/gardosesite" target="_blank" rel="noopener" class="text-purple-400 hover:text-purple-300 text-xs">
+                        <i class="fa-brands fa-github mr-1"></i> GitHub →
+                    </a>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="w-full h-14 rounded-lg mb-2 bg-purple-500/10 border border-slate-700/50 flex items-center justify-center">
+                        <i class="fa-solid fa-hand text-xl text-purple-300"></i>
+                    </div>
+                    <span class="project-tag">Computer Vision</span>
+                    <span class="project-tag">Games</span>
+                    <span class="project-tag">2026</span>
+                    <h3 class="text-base font-semibold mb-1">Hand and Face Tracking Games</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-2">Interactive games controlled by hand and head movements using camera-based tracking.</p>
+                    <a href="https://github.com/RicoJohnViliGardose/cv-iot-class" target="_blank" rel="noopener" class="text-purple-400 hover:text-purple-300 text-xs">
+                        <i class="fa-brands fa-github mr-1"></i> GitHub →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 px-4 bg-gradient-to-b from-slate-800 to-slate-900">
+        <div class="max-w-lg mx-auto w-full">
+            <h2 class="text-4xl font-bold mb-8 text-center text-gray-300"><i class="fa-solid fa-paper-plane accent mr-2"></i>Get In <span class="accent">Touch</span></h2>
+
+            <div class="bg-slate-800/50 backdrop-blur rounded-xl p-6 border border-slate-700/50 fade-in">
+                <form id="contactForm" class="space-y-3">
+                    <input type="text" placeholder="Your Name" class="input-field">
+                    <input type="email" placeholder="Your Email" class="input-field">
+                    <textarea placeholder="Your Message" rows="4" class="input-field"></textarea>
+                    <button type="submit" class="w-full btn-primary justify-center text-sm">
+                        <i class="fa-solid fa-paper-plane mr-2"></i>Send Message
+                    </button>
+                </form>
+
+                <div class="mt-6 grid grid-cols-3 gap-3">
+                    <a href="https://mail.google.com/mail/?view=cm&amp;fo=1&amp;to=ricojhongardose@gmail.com" target="_blank" rel="noopener" class="contact-card">
+                        <div class="text-xl mb-1"><i class="fa-solid fa-envelope"></i></div>
+                        <p class="text-sm font-semibold">Email</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ricojohngardose" target="_blank" rel="noopener" class="contact-card">
+                        <div class="text-xl mb-1"><i class="fa-brands fa-linkedin"></i></div>
+                        <p class="text-sm font-semibold">LinkedIn</p>
+                    </a>
+                    <a href="https://github.com/RicoJohnViliGardose" target="_blank" rel="noopener" class="contact-card">
+                        <div class="text-xl mb-1"><i class="fa-brands fa-github"></i></div>
+                        <p class="text-sm font-semibold">GitHub</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="certModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="certModalTitle">
+        <div class="modal-box">
+            <button type="button" class="modal-close" id="certModalClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            <h3 id="certModalTitle" class="text-2xl font-bold mb-1">All <span class="accent">Certificates</span></h3>
+            <p class="text-gray-400 text-sm mb-6">View all my certifications</p>
+            <div id="certAll" class="grid sm:grid-cols-2 gap-4"></div>
+        </div>
+    </div>
+
+    <div id="lightbox" class="hidden" aria-hidden="true">
+        <button type="button" id="lightboxClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        <figure>
+            <img id="lightboxImg" src="" alt="">
+            <figcaption id="lightboxCap"></figcaption>
+        </figure>
+    </div>
+
+    <div id="toastMsg"></div>
+
+    <footer class="site-footer bg-slate-900 border-t border-slate-700/50 pt-12 pb-8 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="footer-cols">
+
+                <div class="footer-left">
+                    <div class="text-2xl font-bold accent mb-3 brand">Rico John Gardose</div>
+                    <p class="footer-school">Filamer Christian University</p>
+                    <p>BS Information Technology &middot; 3rd Year</p>
+                </div>
+
+                <ul class="footer-right">
+                    <li><span class="footer-label">LinkedIn</span><a href="https://www.linkedin.com/in/ricojohngardose" target="_blank" rel="noopener" class="footer-link">Rico John V. Gardose</a></li>
+                    <li><span class="footer-label">GitHub</span><a href="https://github.com/RicoJohnViliGardose" target="_blank" rel="noopener" class="footer-link">RicoJohnViliGardose</a></li>
+                    <li><span class="footer-label">Gmail</span><a href="https://mail.google.com/mail/?view=cm&amp;fo=1&amp;to=ricojhongardose@gmail.com" target="_blank" rel="noopener" class="footer-link">ricojhongardose@gmail.com</a></li>
+                    <li><span class="footer-label">Phone</span><a href="tel:+639705044259" class="footer-link">+63 970 504 4259</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p class="text-gray-500 text-sm">&copy; 2026 Rico John V. Gardose. All rights reserved.</p>
+                <a href="#home" class="back-to-top" title="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+>>>>>>> 627c500 (update project)
 </html>
