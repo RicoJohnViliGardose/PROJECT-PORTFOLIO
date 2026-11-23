@@ -261,11 +261,18 @@ themeBtn.addEventListener('click', () => {
     const boxCap = document.getElementById('lightboxCap');
 
     //TODO: build the cards
-    preview.innerHTML = CERTS.slice(0, PREVIEW_COUNT).map((c, i) => `
-        <button type="button" class="cert-card" data-i="${i}">
-            <img src="${c.img}" alt="${c.title}" loading="lazy">
+    preview.className = 'cert-track';
+    const strip = document.createElement('div');
+    strip.className = 'cert-marquee';
+    preview.parentNode.insertBefore(strip, preview);
+    strip.appendChild(preview);
+
+    const cardsHTML = (copy) => CERTS.map((c, i) => `
+        <button type="button" class="cert-card" data-i="${i}"${copy ? ' tabindex="-1" aria-hidden="true"' : ''}>
+            <img src="${c.img}" alt="${c.title}">
             <span class="cert-title">${c.title}</span>
         </button>`).join('');
+    preview.innerHTML = cardsHTML(false) + cardsHTML(true);
 
     all.innerHTML = CERTS.map((c, i) => `
         <div class="cert-full">
