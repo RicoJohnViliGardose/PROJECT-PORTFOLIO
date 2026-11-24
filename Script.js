@@ -324,3 +324,26 @@ themeBtn.addEventListener('click', () => {
         else if (!modal.classList.contains('hidden')) closeModal();
     });
 })();
+
+//TODO: Loading screen: hides when the page is ready (shows for at least 1.8s)
+(function () {
+    const loader = document.getElementById('loader');
+    if (!loader) return;
+    const start = performance.now();
+    const MIN_TIME = 1800;
+    let hidden = false;
+
+    function hideLoader() {
+        if (hidden) return;
+        hidden = true;
+        const wait = Math.max(0, MIN_TIME - (performance.now() - start));
+        setTimeout(() => {
+            loader.classList.add('done');
+            setTimeout(() => loader.remove(), 1200);
+        }, wait);
+    }
+
+    if (document.readyState === 'complete') hideLoader();
+    else window.addEventListener('load', hideLoader);
+    setTimeout(hideLoader, 6000); 
+})();

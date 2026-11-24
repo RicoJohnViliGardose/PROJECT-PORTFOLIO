@@ -990,3 +990,92 @@ nav.scrolled { box-shadow: 0 10px 30px -14px rgba(0, 0, 0, 0.7); }
 }
 
 .timeline-item .edu-date { margin-top: 0.35rem; }
+#loader {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4rem;
+    background: radial-gradient(circle at 50% 40%, rgba(124, 58, 237, 0.25), transparent 55%), #0b1120;
+    transition: transform 0.9s cubic-bezier(0.77, 0, 0.18, 1), opacity 0.4s ease 0.6s, visibility 0s linear 1s;
+}
+#loader.done { transform: translateY(-100%); opacity: 0; visibility: hidden; }
+
+.loader-logo {
+    position: relative;
+    width: 9rem;
+    height: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader-ring {
+    position: absolute;
+    inset: 0;
+    border-radius: 9999px;
+    border: 2px solid transparent;
+    border-top-color: var(--purple);
+    border-right-color: #60a5fa;
+    animation: loaderSpin 1.4s linear infinite;
+}
+.loader-ring.r2 {
+    inset: 0.9rem;
+    border-top-color: #22d3ee;
+    border-right-color: transparent;
+    border-left-color: var(--purple);
+    animation-duration: 2s;
+    animation-direction: reverse;
+}
+.loader-text {
+    display: flex;
+    font-family: var(--font-heading);
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+.loader-text span {
+    display: inline-block;
+    animation: letterIn 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) both, flow 6s linear infinite;
+}
+.loader-text span:nth-child(2) { animation-delay: 0.15s, 0s; }
+.loader-text span:nth-child(3) { animation-delay: 0.3s, 0s; }
+
+.loader-name {
+    font-size: 0.75rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+.loader-bar {
+    width: 11rem;
+    height: 3px;
+    border-radius: 9999px;
+    background: rgba(148, 163, 184, 0.2);
+    overflow: hidden;
+}
+.loader-bar span {
+    display: block;
+    height: 100%;
+    border-radius: inherit;
+    background: var(--grad-flow);
+    background-size: 250% auto;
+    transform: translateX(-100%);
+    animation: loaderFill 1.8s ease-in-out forwards, flow 3s linear infinite;
+}
+
+@keyframes loaderSpin { to { transform: rotate(360deg); } }
+@keyframes loaderFill { to { transform: translateX(0); } }
+@keyframes letterIn {
+    from { opacity: 0; transform: translateY(14px) scale(0.8); filter: blur(4px); }
+    to   { opacity: 1; transform: none; filter: blur(0); }
+}
+
+.light #loader { background: #ffffff; }
+
+@media (prefers-reduced-motion: reduce) {
+    .loader-ring { animation: none; }
+    #loader.done { transform: none; }
+}
