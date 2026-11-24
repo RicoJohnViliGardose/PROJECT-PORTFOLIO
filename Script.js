@@ -244,11 +244,9 @@ themeBtn.addEventListener('click', () => {
 //TODO: Certificates: preview (4) + "View All" popup + image viewer
 (function () {
     const CERTS = [
-        { title: 'Computer Science Fundamentals',                     issuer: 'Science of Apps', date: 'November 22, 2026',  img: 'cert-csf.png.png' },
-        { title: 'NIST CSF 2.0 (With Distinction)',                   issuer: 'Science of Apps', date: 'November 22, 2026',  img: 'cert-nist.png.png' },
+        { title: 'Computer Science Fundamentals',                     issuer: 'Science of Apps', date: 'November 22, 2026', img: 'cert-csf.png.png' },
         { title: 'IT Support and Troubleshooting (With Distinction)', issuer: 'Science of Apps', date: 'November 22, 2026', img: 'cert-itsupport.png.png' },
         { title: 'Certified AI Product Designer (With Distinction)',  issuer: 'Science of Apps', date: 'November 22, 2026', img: 'cert-aiproduct.png.png' },
-        { title: 'LFCS Exam Readiness (With Distinction)',            issuer: 'Science of Apps', date: 'November 22, 2026', img: 'cert-lfcs.png.png' },
         { title: 'English for IT 1',                                  issuer: 'Cisco Networking Academy', date: 'November 21, 2026', img: 'cert-english.png' }
     ];
     const PREVIEW_COUNT = 4;
